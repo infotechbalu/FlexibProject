@@ -1,0 +1,287 @@
+/* Tabs Start*/
+
+section {
+	padding: 10px 0;
+}
+body {
+	background: #FCFCFC;
+	color: black;
+}
+p {
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: #0F5EF7 !important;
+	background-color: transparent;
+	border-color: transparent transparent #0F5EF7;
+	border-bottom: 4px solid !important;
+	font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+	border: 1px solid transparent;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	color: black;
+	font-size: 15px;
+}
+.choose-option {
+	display:none;
+}
+#xlsheet_btn {
+	display:none;
+}
+.nav-item {
+	padding: 4px 0px !important;
+	text-align: left !important;
+}
+.nav-tabs {
+	border-bottom: 0px solid #dee2e6;
+	width: 13%;
+}
+nav hr {
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+}
+.froject-upload {
+	float: right;
+	margin: -24px 13px 5px 3px;
+	border: 1px solid black;
+	padding: 2px;
+}
+.project-form {
+	z-index: 999;
+	position: absolute;
+	right: 0px;
+	top: 0%;
+	width: 350px;
+	height: 62px;
+	display: none;
+}
+.upload-form-details {
+	border: 1px solid #98ecd9;
+	width: 100%;
+	margin-left: 0px;
+	padding: 5px;
+	background: #fff;
+	padding: 5px 5px 5px 20px;
+}
+.upload-form-details form select {
+	width: 100%;
+	border: 1px solid #0F5EF7;
+	margin-bottom: 5px;
+}
+.upload-form-details form {
+	width: 94%;
+}
+.nav-item .titletip img{
+	width:56%;
+}
+
+/* Tabs End*/
+/* ToolTip Start*/
+
+
+.titletip {
+	position: relative;
+	display: inline-block;
+  }
+ 
+  .titletip .textbottom  {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 150%;
+	left: 50%;
+	margin-left: -60px;
+  }
+  
+  
+  .titletip .textbottom::after {
+	content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+  }
+  
+  .titletip:hover .textbottom{
+	visibility: visible;
+	opacity: 0.85;
+  }
+  .titletip img{
+	width:56%;
+}
+
+/* Tooltip End */
+.project-name {
+    color: #0761A6;
+    font-weight: bold;
+    font-size: 19px;
+    border: 1px solid #fcfcfc;
+    background: #fcfcfc;
+    margin-top: -12px;
+}
+.automation-path span {
+    font-size: 12px;
+    text-align: right;
+    width: 100%;
+    margin: -10px 0px;
+    float: right;
+}
+.main-container-section {
+    padding-left: 43px !important;
+    margin-bottom: 0% !important;
+}
+
+input,select{
+    border: 1px solid #0F5EF7 !important;
+    background-color: #fcfcfc !important;
+}
+.testmainleft{
+    float: left;
+    border-right:1px solid #ccc;
+	min-height: 400px;
+	float: left;
+    padding-left: 0px;
+}
+.testmainleft1{
+    float: left;
+}
+.leftlistbar{
+	border-right:1px solid #ccc;
+	min-height: 400px;
+	float: left;
+    padding-left: 5px;
+}
+.rightlistbar,.box{
+	float: left;
+	margin-bottom: 10px;
+}
+#someID ul li{
+	margin-bottom: 8px;
+}
+.main-container-section hr{
+	    margin-top: 0px !important;
+        margin-bottom: 5px !important;
+}
+#someID ul .mainlist{
+	position: relative;
+	padding-left: 25px;
+	list-style: none;
+}
+#someID ul .mainlist::before {
+	content: '' !important;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-image: url('../images/Qaops/devops.svg');
+	background-size: cover;
+	top: 10px;
+	transform: translateY(-50%);
+	left: 0;
+	position: absolute;
+}
+.mainlist a{
+	color:black !important;
+}
+.sublist{
+	list-style-type: none;
+	font-size: 12px;
+}
+.sublist{
+	position: relative;
+	padding-left: 25px;
+	list-style: none;
+}
+
+.green::before {
+	content: '' !important;
+	display: inline-block;
+    height: 13px;
+    width: 13px;
+	background-image: url('../images/Qaops/Success.svg');
+	background-size: cover;
+	top: 10px;
+	transform: translateY(-50%);
+	left: 0;
+	position: absolute;
+}
+.red::before {
+	content: '' !important;
+	display: inline-block;
+    height: 13px;
+    width: 13px;
+	background-image: url('../images/Qaops/Error.svg');
+	background-size: cover;
+	top: 10px;
+	transform: translateY(-50%);
+	left: 0;
+	position: absolute;
+}
+.blue::before {
+	content: '' !important;
+	display: inline-block;
+    height: 13px;
+    width: 13px;
+	background-image: url('../images/Qaops/Running.svg');
+	background-size: cover;
+	top: 10px;
+	transform: translateY(-50%);
+	left: 0;
+	position: absolute;
+}
+#testlist li a{
+    color:black !important;
+}
+.rightlistbar p{
+	font-size: 12px;
+}
+.copycode{
+	background-color: #ccc !important;
+    border: 1px solid #ccc !important;
+}
+.rightlistbar,.list_maindata,.list_builddata,.list_requirementdata{
+	display: none;
+}
+.green{
+	color:green;
+}
+.red{
+	color:red;
+}
+.blue{
+	color:blue;
+}
+.statusbar{
+	background-color: #1BBE2F33;
+	padding-left: 12px;
+    margin-bottom: 10px;
+}
+.Qa_start{
+    margin-left: -14px;
+    width: 10px;
+}
+#testlist li{
+    list-style-type: none;
+}
+#testlist li img {
+    width: 15px;
+    height: 15px;
+}
+.listvarticalbar{
+    border-left: 1px solid black;
+    height: 15px;
+    margin: 2px 5px;
+}

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FLIXIB</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="css/automation.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!--top nav starts-->
+	<div class="navbarFixed">
+		<div class="grid-icon"> <img src="images/grid.svg"> </div>
+		<div class="logo-container"> <img src="images/Flexib-icon.svg"> </div>
+		<div class="right-allign">
+			<div class="searchbar-section">
+				<div class="inputareain">
+					<input type="text" class="form-control" placeholder="Search"> <img src="images/dashboard/Search.svg" class="search"> </div>
+			</div>
+			<div class="bell-icon">
+				<div class="bell"> <img src="images/bell.svg">
+					<div class="nottification"></div>
+				</div>
+			</div>
+			<div class="dropdown-profile">
+				<div class="user-profile-main">
+					<div class="userdata">
+						<h4>Manager</h4>
+						<p>Last Login 01/01/2021</p>
+					</div>
+					<div class="user-image"><img src="images/user.png"></div>
+					<div class="user-profile-details">
+						<div class="full-width close-click">
+							<div class="user-details">
+								<div class="userdata">
+									<h4>Rajesh Krishnan</h4>
+									<p class="position-in">Admin</p>
+								</div>
+								<div class="user-image"><img src="images/user.png"></div>
+							</div>
+						</div>
+						<div class="full-width user-details-list">
+							<ul>
+								<li>
+									<a> <img src="images/user-icon.svg"> <span>My Profile</span> </a>
+								</li>
+								<li>
+									<a> <img src="images/settings.svg"> <span>Settings</span> </a>
+								</li>
+								<!--
+                            <li>
+                               <a>
+                                   <img src="images/user-icon.svg"> <span>Theme</span>
+                               </a>
+                            </li>
+                            <li>
+                               <a>
+                                   <img src="images/users.svg"> <span>Entity Change</span>
+                               </a>
+                            </li>
+-->
+								<li>
+									<a> <img src="images/log-in.svg"> <span>Logout</span> </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--top nav endss-->
+	<!--side menu starts-->
+	<div class="side-menubar">
+		<ul>
+			<li>
+				<a><img src="images/dashboard/Dashboard.svg" class="menu-icon"></a>
+				<div class="hover-menu"> <a href="#">Dashboard</a> </div>
+			</li>
+			<li>
+				<a><img src="images/dashboard/Automation.svg" class="menu-icon"></a>
+				<div class="hover-menu"> <a href="#">Digital Automation</a> <a href="#">Perfomance</a> <a href="#">Security</a> <a href="#">QA Ops</a> </div>
+			</li>
+			<li>
+				<a><img src="images/dashboard/Create-new-projecy.svg" class="menu-icon"></a>
+				<div class="hover-menu"> <a href="#">Create New Project</a> </div>
+			</li>
+			<li>
+				<a><img src="images/dashboard/Reports.svg" class="menu-icon"></a>
+				<div class="hover-menu"> <a href="#">Reports</a> </div>
+			</li>
+			<li>
+				<a><img src="images/dashboard/Monitoring.svg" class="menu-icon width"></a>
+				<div class="hover-menu"> <a href="#">Monitoring</a> </div>
+			</li>
+			<li>
+				<a><img src="images/dashboard/Continiuos-testing.svg" class="menu-icon"></a>
+				<div class="hover-menu"> <a href="#">Continiuos Testing</a> </div>
+			</li>
+			<li>
+				<a><img src="images/dashboard/Defect-Tracker.svg" class="menu-icon"></a>
+				<div class="hover-menu"> <a href="#">Defect Tracker</a> </div>
+			</li>
+		</ul>
+	</div>
+	<!--side menu endss-->
+	<!--main container starts-->
+	<div class="main-container-section">
+		<div class="container-fluid">
+			<section id="automation-header">
+				<div class="container">
+					<div class="full-width common-padd-left">
+						<h6>Automation</h6> </div>
+					<div class="full-width automation-path relative common-padd-left">
+                        <img src="images/web-automation/arrow-left-circle.svg" class="left-arrow">
+						<p>Home > Automation > <span id="page">Web  </span> Automation</p>
+						<select class=" project-name" name="project" id="project">
+							<option value="ABC">Project ABC</option>
+							<option value="XYZ">Project XYZ</option>
+							<option value="PQR">Project PQR</option>
+							<option value="BCD">Project BCD</option>
+							<option value="EFG">Project EFG</option>
+						</select>
+					</div>
+				</div>
+			</section>
+			<section id="tabs">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 ">
+							<nav>
+								<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist"> <a class="nav-item nav-link active" id="web" data-toggle="tab" href="#nav-web" role="tab" aria-controls="nav-web" aria-selected="true">Web Automation</a> <a class="nav-item nav-link" id="visual" data-toggle="tab" href="#nav-visual" role="tab" aria-controls="nav-visual" aria-selected="false">Visual Automation</a> <a class="nav-item nav-link" id="mobile" data-toggle="tab" href="#nav-mobile" role="tab" aria-controls="nav-mobile" aria-selected="false">Mobile Automation</a> <a class="nav-item nav-link" id="api" data-toggle="tab" href="#nav-api" role="tab" aria-controls="nav-api" aria-selected="false">API Automation</a> </div> 
+                                <div class="upload"><img src="images/web-automation/Upload.svg"></div>
+								<hr> </nav>
+							<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+								<div class="row project-form">
+									<div class="check-alert-top">
+										<div class="row">
+											<div class="col-md-9">
+												<p>Project Upload to Repository</p>
+											</div>
+											<div class="col-md-3"> 
+                                                <img src="images/web-automation/x-circle.svg" id="upload-form-hide">
+                                            </div>
+										</div>
+									</div>
+									<div class="row upload-form-details">
+										<form action="">
+											<label for="repo">Repository</label>
+											<br>
+											<select class="form-control" name="reposi" id="reposi">
+												<option value="git">GIT HUb</option>
+												<option value="svn">SVN</option>
+											</select>
+											<label for="up-project">Project</label>
+											<br>
+											<select class="form-control" name="uplod-name" id="uplod-name">
+												<option value="ABC">Project 1</option>
+												<option value="XYZ">Project 2</option>
+												<option value="PQR">Project 3</option>
+												<option value="BCD">Project 4</option>
+											</select>
+											<label for="cate">Category</label>
+											<br>
+											<select class="form-control" name="project-name" id="project-name">
+												<option value="web">Web Application</option>
+												<option value="perfomance">Perfomance</option>
+												<option value="security">Security</option>
+												<option value="api">API Testing</option>
+											</select>
+											<div class="search-container">
+												<p>Project Directory</p>
+												<form class="searchbar" action="" style="margin:auto;max-width:300px">
+													<input type="text" placeholder="Search.." name="search2">
+													<button type="submit"><i class="fa fa-search"></i></button>
+												</form>
+											</div>
+											<br/>
+											<button type="submit" class="btn btn-primary" value="Submit">Upload to Repo</button>
+											<br/>
+										</form>
+									</div>
+								</div>
+								<!--   Web Automation -->
+								<div class="tab-pane fade show active" id="nav-web" role="tabpanel" aria-labelledby="Web">
+                                    <h4 class="heading-common">Automated execution of Web Application functionality across browsers</h4>
+									<h5>Execution</h5>
+									<div class="row">
+										<div class="col-md-4 repo">
+											<p> Repository</p>
+											<select class="form-control" name="project" id="project">
+												<option value="ABC">Project ABC</option>
+												<option value="XYZ">Project XYZ</option>
+												<option value="PQR">Project PQR</option>
+												<option value="BCD">Project BCD</option>
+												<option value="EFG">Project EFG</option>
+											</select>
+										</div>
+										<div class="col-md-4">
+											<main class="form-container">
+												<div>
+													<!-- <p>Select</p> -->
+													<input id="radi" type="radio" class="chectout-select" value="radi" name="radi">
+													<label for="radi">Checkout project using structure</label>
+												</div>
+											</main>
+										</div>
+										<div class="col-md-4">
+											<main class="form-container">
+												<div>
+													<input id="radi2" type="radio" class="chectout-git" value="radi2" name="radi">
+													<label for="radi2">Checkout project with Git Access Key</label>
+												</div>
+											</main>
+										</div>
+									</div>
+									<div class="Checkout_str">
+										<div class="row">
+											<div class="col-md-4">
+												<p> Project</p>
+												<select class="form-control" name="project-name" id="project-name">
+													<option value="ABC">Project 1</option>
+													<option value="XYZ">Project 2</option>
+													<option value="PQR">Project 3</option>
+													<option value="BCD">Project 4</option>
+												</select>
+											</div>
+											<div class="col-md-4">
+												<p> Project Category</p>
+												<select class="form-control" name="database" id="database">
+													<option value="ABC">Maven</option>
+													<option value="XYZ">Gradle</option>
+													<option value="PQR">Testing</option>
+													<option value="BCD">ANT</option>
+												</select>
+											</div>
+											<div class="col-md-4">
+												<p> Enter Access Token</p>
+												<input type="text" class="form-control" placeholder="Type in"> </div>
+										</div>
+										<div class="row parentdiv">
+											<div class="col-md-12 text-center">
+                                              <button type="button" class="btn btn-primary" value="Checkout" id="checkout"> Checkout</button>
+                                             </div>
+										</div>
+										<div class="row checkoutalert">
+											<div class="ckeck-box">
+												<div class="check-alert-top">
+													<div class="row">
+														<div class="col-md-6">
+															<p>Successful</p>
+														</div>
+														<div class="col-md-6"> <i class="fa fa-times-circle-o" aria-hidden="true"></i> </div>
+													</div>
+												</div>
+												<div class="row center-text">
+													<p>Please checkout Successful to the Test Repository</p>
+													<button type="button" class="btn btn-warning">Ok</button>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-4 search-container">
+												<p>Project Path</p>
+												<form class="searchbar" action="">
+													<input type="text" placeholder="Search.." name="search2">
+													<button type="submit"><img src="images/dashboard/Search.svg"></button>
+												</form>
+											</div>
+										</div>
+										<br/>
+										<div class=" row file-choose">
+											<p>Choose Runnable xlsx :</p>
+											<div class="file-drop-area"> <span class="fake-btn">Choose files</span> <span class="file-msg">or drag and drop files here</span>
+												<input class="file-input" type="file" multiple> </div>
+										</div>
+										<div class="row parentdiv">
+                                            <div class="col-md-12 text-center">
+											<button type="button" class="btn btn-primary" value="Checkout" id="importsheet1"> Import Sheet</button>
+                                            </div>
+                                            </div>
+                                        <div class="row">
+											<table id="example" class="display" style="width:100%">
+												<thead>
+													<tr>
+														<th>Test Case ID</th>
+														<th>Test Case Name</th>
+														<th>Test Description</th>
+														<th>Test Script Name</th>
+														<th>Run Mode</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>
+															<label class="switch">
+																<input type="checkbox"> <span class="slider round"></span> </label>
+														</td>
+													</tr>
+													<tr>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>
+															<label class="switch">
+																<input type="checkbox"> <span class="slider round"></span> </label>
+														</td>
+													</tr>
+													<tr>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>
+															<label class="switch">
+																<input type="checkbox"> <span class="slider round"></span> </label>
+														</td>
+													</tr>
+													<tr>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>Project 1_TC_001_Approve</td>
+														<td>
+															<label class="switch">
+																<input type="checkbox"> <span class="slider round"></span> </label>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="row excute-report">
+											<div class="col-md-6">
+												<button type="button" class="btn btn-primary " value="Execute" id="Execute"> Execute</button>
+											</div>
+											<div class="col-md-6">
+												<button type="button" class="btn btn-default" value="Report" id="Report"> Report</button>
+											</div>
+										</div>
+										<div class="row progress-console">
+											<div class=" row progress-log">
+												<p>Progress</p>
+											</div>
+											<div class="row ">
+                                                <div class="col-md-12 progress-text">
+												<span>28.07.2021 12:30:12</span> <span class="black">Execution started</span><br/>
+													<span>28.07.2021 12:30:12</span> <span class="black"> Process 1 started on thread 1</span><br/>
+														<span>28.07.2021 12:30:12</span> <span class="green">Process 1 completed on thread 1</span><br/>
+															<span>28.07.2021 12:30:12</span> <span class="black">Process 2 started on thread 1</span><br/>
+																<span>28.07.2021 12:30:12</span> <span class="red">Process 2 failed on thread 1</span><br/>
+																	<span>28.07.2021 12:30:12</span> <span class="black">Process 3 started on thread 1</span><br/>
+																		<span>28.07.2021 12:30:12</span> <span class="green">Process 3 completed on thread 1</span><br/>
+																			<span>28.07.2021 12:30:12</span> <span class="black">Process 4 started on thread 1</span> 
+                                                    </div>
+                                                </div>
+										</div>
+									</div>
+									<!--2nd start-->
+									<div class="Checkout_git">
+										<div class="row">
+											<div class="col-md-4">
+												<p> Enter Repository URL</p>
+												<input type="text" class="form-control" placeholder="Type in"> </div>
+											<div class="col-md-4">
+												<p> Enter Access Token</p>
+												<input type="text" class="form-control" placeholder="Type in"> </div>
+										</div>
+										<div class="row parentdiv">
+											<div class="col-md-12 text-center">
+                                              <button type="button" class="btn btn-primary" value="Checkout" id="checkout"> Checkout</button>
+                                             </div>
+										</div>
+										<div class="row checkoutalert">
+											<div class="ckeck-box">
+												<div class="check-alert-top">
+													<div class="row">
+														<div class="col-md-6">
+															<p>Successful</p>
+														</div>
+														<div class="col-md-6"> <i class="fa fa-times-circle-o" aria-hidden="true"></i> </div>
+													</div>
+												</div>
+												<div class="row center-text">
+													<p>Please checkout Successful to the Test Repository</p>
+													<button type="button" class="btn btn-warning">Ok</button>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-4 search-container">
+												<p>Project Path</p>
+												<form class="searchbar" action="">
+													<input type="text" placeholder="Search.." name="search2">
+													<button type="submit"><img src="images/dashboard/Search.svg"></button>
+												</form>
+											</div>
+										</div>
+										<br/>
+										<div class=" row file-choose">
+											<p>Choose Runnable xlsx :</p>
+											<div class="file-drop-area"> <span class="fake-btn">Choose files</span> <span class="file-msg">or drag and drop files here</span>
+												<input class="file-input" type="file" multiple> </div>
+										</div>
+										<div class="row parentdiv">
+											 <div class="col-md-12 text-center">
+											<button type="button" class="btn btn-primary" value="Checkout" id="git-importsheet"> Import Sheet</button>
+                                            </div>
+										</div>
+										<div class="row progress-console">
+											<div class=" row progress-log">
+												<p>Progress</p>
+											</div>
+											<div class="row progress-text">
+												<san>28.07.2021 12:30:12</span> <span class="black">Execution started</span><br/>
+													<span>28.07.2021 12:30:12</span> <span class="black"> Process 1 started on thread 1</span><br/>
+														<span>28.07.2021 12:30:12</span> <span class="green">Process 1 completed on thread 1</span><br/>
+															<span>28.07.2021 12:30:12</span> <span class="black">Process 2 started on thread 1</span><br/>
+																<span>28.07.2021 12:30:12</span> <span class="red">Process 2 failed on thread 1</span><br/>
+																	<span>28.07.2021 12:30:12</span> <span class="black">Process 3 started on thread 1</span><br/>
+																		<span>28.07.2021 12:30:12</span> <span class="green">Process 3 completed on thread 1</span><br/>
+																			<span>28.07.2021 12:30:12</span> <span class="black">Process 4 started on thread 1</span> </div>
+										</div>
+									</div>
+								</div>
+								<!-- Visual Automation start-->
+								<div class="tab-pane " id="nav-visual" role="tabpanel" aria-labelledby="visual">
+									
+								</div>
+								<!-- Mobile Automation start-->
+								<div class="tab-pane fade" id="nav-mobile" role="tabpanel" aria-labelledby="mobile">
+									
+								</div>
+								<!-- API Automation start-->
+								<div class="tab-pane fade" id="nav-api" role="tabpanel" aria-labelledby="api">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!--main container endss-->
+	<!--    copy rights starts-->
+	<div class="copyright-container"> Copyright © 3i Infotech. All rights reserved. </div>
+	<!--    copy rights ends-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/Chart.js"></script>
+	<script>
+	$(".user-profile-main").click(function() {
+		$(".user-profile-details").addClass("show-div");
+		event.stopPropagation();
+	});
+	$(".close-click").click(function() {
+		$(".user-profile-details").removeClass("show-div");
+		event.stopPropagation();
+	});
+	$('body').click(function() {
+		$('.user-profile-details').removeClass("show-div");
+	});
+	</script>
+	<script>
+	$(".nav-item").click(function() {
+		document.getElementById("page").innerHTML = this.id;
+	});
+	$(document).ready(function() {
+		$(".chectout-select").click(function() {
+			$(".Checkout_git").css("display", "none");
+			$(".Checkout_str").css("display", "block");
+			$(".progress-console").css("display", "none");
+		});
+		$(".chectout-git").click(function() {
+			$(".Checkout_str").css("display", "none");
+			$(".Checkout_git").css("display", "block");
+			$(".progress-console").css("display", "none");
+		});
+		$("#checkout").click(function() {
+			$(".ckeck-box").fadeIn(500);
+			$(".ckeck-box").fadeOut(3000);
+		});
+		//progress-console
+		$("#Execute").click(function() {
+			$(".progress-console").css("display", "block");
+		});
+		$("#git-importsheet").click(function() {
+			$(".progress-console").css("display", "block");
+		});
+	});
+	</script>
+	<script>
+	var $fileInput = $('.file-input');
+	var $droparea = $('.file-drop-area');
+	// highlight drag area
+	$fileInput.on('dragenter focus click', function() {
+		$droparea.addClass('is-active');
+	});
+	// back to normal state
+	$fileInput.on('dragleave blur drop', function() {
+		$droparea.removeClass('is-active');
+	});
+	// change inner text
+	$fileInput.on('change', function() {
+		var filesCount = $(this)[0].files.length;
+		var $textContainer = $(this).prev();
+		if(filesCount === 1) {
+			// if single file is selected, show file name
+			var fileName = $(this).val().split('\\').pop();
+			$textContainer.text(fileName);
+		} else {
+			// otherwise show number of files
+			$textContainer.text(filesCount + ' files selected');
+		}
+	});
+	// Table script
+	$(document).ready(function() {
+		$('#example').DataTable();
+	});
+	// upload project
+	$(".upload").click(function() {
+		$(".project-form").css("display", "block");
+	});
+	$("#upload-form-hide").click(function() {
+		$(".project-form").css("display", "none");
+	});
+	</script>
+	<script>
+	$(document).ready(function() {
+		$("#move2").click(function() {
+			$(this).css("background", "#F58027");
+			$("#btn-value").html("Create Reference");
+			$("#move3").click(function() {
+				$(this).css("background", "#F58027");
+				$("#btn-value").html("Test");
+				$("#move4").click(function() {
+					$(this).css("background", "#F58027");
+					$("#btn-value").html("Approve");
+					$("#Decline").css("display", "block");
+					// Accepting Instal
+					$("#btn-value").click(function() {
+						$(".install-box").fadeIn(500);
+						$(".install-box").fadeOut(3000);
+					});
+					// Decine
+					$("#Decline").click(function() {
+						$(".declain-box").fadeIn(500);
+						$(".declain-box").fadeOut(3000);
+					});
+				});
+			});
+		});
+	});
+	</script>
+	<script>
+	$(document).ready(function() {
+		$("#web-Execute").click(function() {
+			$(".progress-console").css("display", "block");
+		});
+	});
+	// API Progress
+	$("#api-Execute").click(function() {
+		$(".progress-console").css("display", "block");
+	});
+	const data = {
+		labels: ['High', 'Medium', 'Low'],
+		datasets: [{
+			label: 'My First Dataset',
+			data: [300, 150, 40],
+			backgroundColor: ['#6698FF', '#F58027', '#2B8B37'],
+			hoverOffset: 4
+		}]
+	};
+	// Analytic Chart Config
+	let analyticChart = document.getElementById("analytic");
+	const doughnutChart = new Chart(analyticChart, {
+		type: 'doughnut',
+		data: data,
+	});
+	</script>
+</body>
+
+</html>

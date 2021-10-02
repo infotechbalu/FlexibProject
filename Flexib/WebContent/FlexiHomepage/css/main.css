@@ -1,0 +1,141 @@
+body
+{
+    
+}
+.header
+{
+    background-color: #4a3c3c;
+    
+}
+#logoid
+{ 
+    margin: 10px;
+    padding: 10px;
+    color: #e9eff6;
+    font-size: 30px; font-weight: bold; 
+
+}
+
+
+.cssjobname
+{
+    background-color: #e9eff6;
+    color: #fff;
+    text-align:left;
+	width:25%;
+}
+
+a
+{
+    text-decoration:none;
+    text-decoration-color:none;
+}
+a:link 
+{ 
+    color:black;
+
+}
+.cssjobnameheader
+{
+    background-color: #e9e4e4;
+	width:25%;
+}
+.cssbuildheader
+{
+	background-color: #e9e4e4;
+	width:15%;
+}
+.cssstatusheader
+{
+    background-color: #e9e4e4;
+	width:15%;
+}
+.csswhoheader
+{
+	background-color: #e9e4e4;
+	width:20%;
+}
+.csslastbuildtookheader
+{
+	background-color: #e9e4e4;
+	width:20%;
+}
+.cssslastsuccessheader
+{
+	background-color: #e9e4e4;
+	width:20%;
+}
+.cssslastfailedheader
+{
+	background-color: #e9e4e4;
+	width:20%;
+}
+.jenkinsurlcss .expand-collapse
+{
+    
+    display: inline;
+    float:right;
+    margin: 0 10px 0 10px;
+}
+.jenkinsurlcss
+{
+    background-color: #a6d2e8;
+    height: 20px;
+    
+}
+.cssstatus
+{
+    text-align:center;
+    color: black;
+    font-weight:bold;
+	width:15%;
+}
+.cssslastsuccess
+{
+	width:20%;
+    background-color: #e9eff6;
+}
+.csswho
+{
+    width:20%;
+    background-color: #e9eff6;
+}
+.cssbuild
+{
+	width:15%;
+	background-color: #e9eff6;
+}
+.csslastbuildtook
+{
+	width:20%;
+    text-align:center;
+    background-color: #e9eff6;
+}
+
+.cssviewselection
+{
+    margin-left: 2%;
+    background-color: #e9eff6;
+    text-align:center;
+}
+.cssviewselection option
+{
+    background-color: #e9eff6;
+}
+.selections
+{
+    float:right;
+}
+.mainsearchclass
+{
+    /*margin: 10px;
+    margin-left: 60%;*/
+    margin: 5px;
+    margin-right: 50px;
+    /*margin: 5px 10% 5px 0;*/
+}
+.selections .mainviewselection .mainsearchclass
+{
+    display:inline;
+}
+

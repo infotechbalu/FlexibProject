@@ -1,0 +1,21 @@
+<svg id="Forward-pagination" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M2.189,3.25.22,1.28A.75.75,0,0,1,1.28.22l2.5,2.5a.75.75,0,0,1,0,1.061l-2.5,2.5A.75.75,0,0,1,.22,5.22Z" transform="translate(0 0.25)" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="Button" d="M7,0A7,7,0,1,1,0,7,7,7,0,0,1,7,0Z" fill="#22a5f7"/>
+  <g id="Icon_-_Chevron_Right" data-name="Icon - Chevron Right" transform="translate(5.5 3.5)">
+    <rect id="Special_Chevron_Right_background" data-name="Special / Chevron Right background" width="4" height="7" fill="none"/>
+    <g id="Group_42" data-name="Group 42">
+      <path id="Mask-2" data-name="Mask" d="M2.189,3.25.22,1.28A.75.75,0,0,1,1.28.22l2.5,2.5a.75.75,0,0,1,0,1.061l-2.5,2.5A.75.75,0,0,1,.22,5.22Z" transform="translate(0 0.25)" fill="none"/>
+      <g id="Mask_Group_42" data-name="Mask Group 42" clip-path="url(#clip-path)">
+        <g id="Icon_Color" data-name="Icon Color">
+          <g id="Color">
+            <path id="Color-2" data-name="Color" d="M0,0H4V7H0Z" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

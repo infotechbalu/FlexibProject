@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.shoppingcart.utils.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.shoppingcart.tests.TestController">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="initBrowser"/>
+          <include name="TestCaseController"/>
+        </methods>
+      </class> <!-- com.shoppingcart.tests.TestController -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

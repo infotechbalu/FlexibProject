@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.25" height="19.25" viewBox="0 0 19.25 19.25">
+  <g id="Create-new-projecy" transform="translate(0.125 0.125)">
+    <path id="Path_4357" data-name="Path 4357" d="M19.15,22H5.85A2.8,2.8,0,0,1,3,19.15V5.85A2.8,2.8,0,0,1,5.85,3h13.3A2.8,2.8,0,0,1,22,5.85v13.3A2.8,2.8,0,0,1,19.15,22ZM5.85,4.9a.9.9,0,0,0-.95.95v13.3a.9.9,0,0,0,.95.95h13.3a.9.9,0,0,0,.95-.95V5.85a.9.9,0,0,0-.95-.95Z" transform="translate(-3 -3)" fill="#fff" stroke="#0f5ef7" stroke-width="0.25"/>
+    <path id="Path_4358" data-name="Path 4358" d="M17.45,20a.9.9,0,0,1-.95-.95v-7.6a.95.95,0,1,1,1.9,0v7.6A.9.9,0,0,1,17.45,20Z" transform="translate(-7.95 -5.75)" fill="#fff" stroke="#0f5ef7" stroke-width="0.25"/>
+    <path id="Path_4359" data-name="Path 4359" d="M19.05,18.4h-7.6a.95.95,0,1,1,0-1.9h7.6a.95.95,0,1,1,0,1.9Z" transform="translate(-5.75 -7.95)" fill="#fff" stroke="#0f5ef7" stroke-width="0.25"/>
+  </g>
+</svg>

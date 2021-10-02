@@ -1,0 +1,574 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="icon" href="images/stf.png" type="image/ico" />
+    <title>Security Testing Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet"/>
+    <!-- Morris Charts CSS -->
+	<link href="morris/morris.css" rel="stylesheet" type="text/css"/>
+	
+	<script type="text/javascript" src="googlecharts/loader.js"></script>
+<script>
+	var auto_refresh = setInterval(
+        function ()
+        {
+        $('#load_me').load('samp.jsp').fadeIn("slow");
+        }, 1000); // autorefresh the content of the div after
+                   //every 1000 milliseconds(1sec)
+</script>
+<script type="text/javascript">
+        var auto_refresh1 = setInterval(
+        function ()
+        {
+        $('#progress').load('progress.jsp').fadeIn("slow");
+        }, 1000); // autorefresh the content of the div after
+                   //every 1000 milliseconds(1sec)
+</script>
+<script type="text/javascript">
+        var auto_refresh1 = setInterval(
+        function ()
+        {
+        $('#vultables').load('vultable.jsp').fadeIn("slow");
+        }, 1000); // autorefresh the content of the div after
+                   //every 1000 milliseconds(1sec)
+</script>
+<script type="text/javascript">
+        var auto_refresh1 = setInterval(
+        function ()
+        {
+        $('#graph').load('graph.jsp').fadeIn("slow");
+        }, 1000); // autorefresh the content of the div after
+                   //every 1000 milliseconds(1sec)
+</script>
+<script type="text/javascript">
+        var auto_refresh1 = setInterval(
+        function ()
+        {
+        $('#scan').load('scan.jsp').fadeIn("slow");
+        }, 1000); // autorefresh the content of the div after
+                   //every 1000 milliseconds(1sec)
+</script>
+<!-- <script type="text/javascript">
+        var auto_refresh1 = setInterval(
+        function ()
+        {
+        $('#marquee').load('marquee.jsp').fadeIn("slow");
+        }, 1000); // autorefresh the content of the div after
+                   //every 1000 milliseconds(1sec)
+</script> -->
+<style type="text/css">
+	.TFtable{
+		width:100%; 
+		border-collapse:collapse; 
+	}
+	.TFtable td{ 
+		padding:7px; border:#4e95f4 1px solid;
+	}
+	/* provide some minimal visual accomodation for IE8 and below */
+	.TFtable tr{
+		background: #b8d1f3;
+	}
+	/*  Define the background color for all the ODD background rows  */
+	.TFtable tr:nth-child(odd){ 
+		background: #b8d1f3;
+	}
+	/*  Define the background color for all the EVEN background rows  */
+	.TFtable tr:nth-child(even){
+		background: #dae5f4;
+	}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+</style>
+
+<style>
+.test {
+  -moz-animation-duration: 400ms;
+  -moz-animation-name: blink;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  
+  -webkit-animation-duration: 400ms;
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@-moz-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  } 
+  to {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+<!--blink ends-->
+</style>
+<style>
+.sidenav {
+    width: 215px;
+    position: fixed;
+    z-index: 0;
+    top: 0px;
+    left: 5px;
+    background: transparent;
+    overflow-x: hidden;
+    padding: 6px 0;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 11px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+.main {
+    margin-left: 0px; /* Same width as the sidebar + left position in px */
+    font-size: 11px; /* Increased text to enable scrolling */
+    padding: 0px 5px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 10px;}
+    .sidenav a {font-size: 10px;}
+}
+hr { background-color: red; height: 1px; border: 0; }
+</style>
+
+</head>
+  <body class="nav-md">
+  	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <!--<a href="index.html" class="site_title"><img style="width:210px;height:50px" src="images/3i-Infotech.jpg"/></a>-->
+			</div>
+            <div class="clearfix"></div>
+            <br />
+            <!-- sidebar menu -->
+			
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu sidenav">
+              <div class="menu_section">
+                <ul class="nav side-menu">
+				<a href="index.jsp"><img style="width:180px;height:80px" src="images/flexib.png"/></a>
+				<br><br>
+                <li><a href="index.jsp"><i class="fa fa-home" aria-hidden="true"></i>SecurityTesting <small>Dashboard</small><span class="fa fa-chevron-down"></span></a>
+                  </li>
+				  <!-- <li><a href="#navigate"><i class="fa fa-rss"></i>Detailed Vulnerabilities <span class="fa fa-chevron-down"></span></a>
+                  </li>
+                  <li><a><i class="fa fa-newspaper-o"></i>Compliances <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#navigate1">OWASP Top 10 (2013)</a></li>
+                      <li><a href="#navigate2">PCI-DSS 6.5</a></li>
+					  <li><a href="#navigate3">SANS Top 25</a></li>
+					  <li><a href="#navigate4">NIST Compliance</a></li>
+					  <li><a href="#navigate5">HIPAA Compliance</a></li>
+					  <li><a href="#navigate9">OSSTMM Compliance</a></li>
+					  <li><a href="#navigate6">SAS70 Compliance</a></li>
+					  <li><a href="#navigate7">ISO27001 Compliance</a></li>
+					  <li><a href="#navigate8">WASC Compliance</a></li>
+                    </ul>
+                  </li>	 -->			  
+                  <li><a><i class="fa fa-pie-chart"></i>Report <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                    
+                      <li><a href="Report.jsp?platform=Web">Web Application</a></li>
+                      <li><a href="Report.jsp?platform=Mobile-APK">Mobile Application-APK</a></li>
+					  <li><a href="Report.jsp?platform=Static Code Analysis">Static Code Analysis</a></li>
+					
+                    </ul>
+                  </li>
+				  <!-- <li><a href="Report.pdf"><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>PDF Report<span class="fa fa-chevron-down"></span></a> -->
+                </ul>                
+              </div> 
+              <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img style="width:210px;height:80px;" src="images/logo.jpg"/> -->          
+            </div>
+			
+            <!-- /sidebar menu -->
+            <!-- /menu footer buttons -->        
+            <!-- /menu footer buttons -->
+             
+          </div>
+         
+        </div>         
+	</div>
+        <!-- page content -->
+        <div class="right_col main" role="main">
+          <!-- top tiles -->
+          <!-- <div class="row tile_count"> -->
+          	<!-- <table width="100%">
+          		<tr>
+          			<td width="30%"></td>
+          			<td width="30%"><h3>Security Testing Framework</h3></td>
+          			<td width="70%"align="right"><img style="width:150px;height:60px;" src="images/logo1.jpg"/></td>
+          		</tr>
+          	</table> -->
+          	 <div id="marquee"><jsp:include page="marquee.jsp" /></div>
+			<hr color="red" style="margin-top: 0px; margin-bottom: 15px;">
+		  <!-- </div> -->
+	<div class="page-wrapper">
+    <div class="container-fluid pt-30">
+<!--       <div class="panel-head-singl mb-20">
+        <div class="panel-head-item">
+          <button class="btn btn-info btn-rounded">Generate Test Case</button>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="panel panel-default card-view">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h6 class="panel-title txt-dark">Platform</h6>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-wrapper collapse in">
+              <div class="panel-body pa-30">
+                <div class="row mb-10">
+                  <div class="col-sm-12 label-left">
+                    <div class="form-horizontal">
+                      <div class="form-group">
+                      <form action="test1.jsp" method="post">
+                        <label for="" class="col-sm-3 control-label">Platform</label>
+                        <div class="col-sm-9">
+							<div class="select-field-pad">
+                          <select class="selectpicker" data-style="form-control" id="platform" name="platform" >
+                            <option disabled>Select Platform</option>
+                            <option value="web">Web</option>
+                            <option value="Mobile-APK">Mobile-APK</option>
+                            <!--<option>Tab</option>-->
+                          </select>
+								</div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Client Name</label>
+                        <div class="col-sm-9">
+                          <input class="form-control" id="clientname" name="clientname" placeholder="Client Name /Project Name" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Target</label>
+                        <div class="col-sm-9">
+                          <!-- <input class="form-control" id="clientname" name="clientname" placeholder="DEMO" type="hidden"> -->
+                          <input class="form-control" id="target" name="target" value="" placeholder="Target URL/Path" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Username</label>
+                        <div class="col-sm-9">
+                          <input class="form-control" value="" id="username" name="username" placeholder="User Name" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-3 control-label">Password</label>
+                        <div class="col-sm-9">
+                          <input class="form-control" value="" id="password" name="password" placeholder="Enter Password" type="password">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                    
+                     <input type="checkbox"  onchange="document.getElementById('submit1').disabled = !this.checked;">Check here to indicate that you have read and agree to the terms of the Security Testing Execution Agreement. <br><a href="" data-toggle="modal" data-target="#agree"><b><font color="red">Click Here for more information</font></b></a></input><br>
+	                 <input class="btn btn-info mt-15" name="submit" type="submit" id="submit1" value="submit" disabled>
+	                    
+	                    <!-- <button class="btn btn-primary mt-15" data-toggle="modal" data-target="#agree">Agree</button> -->
+	                    <!-- <input type="hidden" name="submit" type="submit" name="button1" value="submit">
+	                    <button class="btn btn-info mt-15" value="button1">Execute</button> -->
+	                   <!--  <button class="btn btn-warning mt-15">Report</button> -->
+                    </form>
+                    
+                    <!-- <button class="btn btn-primary mt-15" data-toggle="modal" data-target="#agree">Agree</button>
+                    <button class="btn btn-warning mt-15">Report</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		</div>
+		<!-- Popup	 -->
+		<div id="agree" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> <i class="zmdi zmdi-close"></i> </button>
+                                    <h5 class="modal-title" id="">Security Testing Execution Agreement</h5>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="row mb-10">
+                  <div class="col-sm-12">
+                    <div class="form-horizontal">
+                      <div class="form-group">
+                        <%-- <label for="" class="col-sm-3 control-label"><jsp:include page="Agreement.jsp" /></label>
+                        <div class="col-sm-7">
+                          <input class="form-control" value="" placeholder="" type="text">
+                        </div> --%>
+                        
+                        <jsp:include page="Agreement.jsp" />
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                                  </div>
+                                  <div class="modal-footer">
+									  <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Agree</button>
+                                    <!-- <button type="button" class="btn btn-primary btn-rounded">Save</button> -->
+                                    
+                                  </div>
+                                </div>
+                                <!-- /.modal-content --> 
+                              </div>
+                              <!-- /.modal-dialog --> 
+                            </div>
+                        <!-- popup ends -->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="panel panel-default card-view" style="height:380px;width:340px">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h6 class="panel-title txt-dark">Execution Progress Status</h6>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-wrapper collapse in">
+              <div class="panel-body pa-20">
+                <!-- <div id="morris_donut_chart" class="morris-chart donut-chart" style="height: 275px;"></div> -->
+                <table align="center">
+	                <tr>
+	                	<td><div id="progress"><jsp:include page="progress.jsp" /></div></td>
+	                </tr>
+	                <tr>
+		                <td>
+		                
+		                </td>
+	                </tr>
+                </table>
+                <div id="scan"><jsp:include page="scan.jsp" /></div>
+                
+                 <!--  <button class="btn btn-sm btn-primary mt-15">Done</button> -->
+                 <%-- <div id="donutchart" style="width: 320px; height: 185px;"></div>
+                 <%
+                 int High=0;
+                 int Medium=0;
+                 int Low=0;
+                 int Informational=0;
+                 int unknown=0;
+                 String severity=null;
+                 String sql="select severity from scanreport";
+                 Statement stmt5=con.createStatement();
+                 ResultSet rs5=stmt5.executeQuery(sql); 
+                 //severity=rs5.getString(1);
+                 while(rs5.next()){
+                 	severity=rs5.getString(1);
+                 	if(severity!=null && severity!="" && !(severity.isEmpty())){
+                 		if(severity.equalsIgnoreCase("High")){
+                 			High=High+1;
+                 		}
+                 		else if(severity.equalsIgnoreCase("Medium")){
+                 			Medium=Medium+1;
+                 		}
+                 		else if(severity.equalsIgnoreCase("Low")){
+                 			Low=Low+1;
+                 		}
+                 		else if(severity.equalsIgnoreCase("Information")){
+                 			Informational=Informational+1;
+                 		}
+                 	}
+                 	else if(severity=="" || (severity==null) || (severity.isEmpty())){
+                 		unknown=unknown+1;
+                 	} 
+                 }
+
+                 rs5.close();
+                 stmt5.close();
+                 con.close();
+                 %>
+	<script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Vulnerabilities', 'Count'],
+          ['High',     <%=High%>],
+          ['Medium',      <%=Medium%>],
+          ['Low',  <%=Low%>],
+          ['Information',  <%=Informational%>]
+        ]);
+
+        var options = {
+          title: 'Vulnerability Severity Graph',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script> --%>
+                 
+                 <!--  -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="panel panel-default card-view" style="height:380px;width:340px">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h6 class="panel-title txt-dark">Tools Execution Status</h6>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-wrapper collapse in">
+              <div class="panel-body">
+                <div class="table-responsive" id="load_me"><jsp:include page="samp.jsp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  </div>
+      <div class="row">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 pt-15">
+          <div class="panel panel-default card-view">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h6 class="panel-title txt-dark">Vulnerabilities</h6>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+                <div id="vultables" >
+                   <jsp:include page="vultable.jsp" />
+           </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 pt-20">
+          <div class="panel panel-default card-view" >
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h6 class="panel-title txt-dark">Severity Graph</h6>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-wrapper">
+              <div class="panel-body"> 
+              		<div id="graph"><jsp:include page="graph.jsp" /></div>
+				  <!-- <div id="morris_extra_bar_chart" class="morris-chart" style="height: 417px;"></div> -->
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+	</div>
+        <!-- /page content -->
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Security Testing Dashboard
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    <!--</div>-->
+<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		} else {
+			document.getElementById("myBtn").style.display = "none";
+		}
+	}
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+    <!-- jQuery -->
+    <script src="jquery/dist/jquery.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+	<!--Morris -->
+<!-- 	<script src="morris/jquery.min.js"></script>
+	<script src="morris/raphael-min.js"></script>
+	<script src="morris/morris.js"></script> -->
+	
+	<!-- Init JavaScript --> 
+	<script src="js/main.js"></script>
+  </body>
+</html>

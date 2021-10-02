@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  outline: none;
+}
+
+body {
+  background: #333;
+  color: #fff;
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 14px !important;
+}
+
+:root {
+  --primary-color: #007af3;
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+#login-box {
+  height: 100vh;
+}
+
+.form button {
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  width: 106px;
+  height: 40px;
+  color: #fff;
+  background: #0761A6;
+  font-size: 16px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.carousel-inner .carousel-caption h5 {
+  font-size: 27px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.carousel-inner .carousel-caption p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.s-up {
+  color: #2D9CFC;
+}
+
+.l-in p {
+  font-size: 14px;
+  color: #606060;
+}
+
+.left-box {
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.carousel-indicators {
+  bottom: 37% !important;
+}
+
+.carousel-indicators li {
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50%;
+}
+
+.carousel-caption {
+  bottom: 40% !important;
+  width: 85%;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.slide-box {
+  position: relative;
+}
+
+.brand-logo {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+
+.brand-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.right-box {
+  height: 100vh;
+  position: relative;
+  background: #fff;
+}
+
+.brand-logos, .brand-logos1 {
+  position: absolute;
+  top: 79%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 20px 0px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.brand-logos1 {
+  position: absolute;
+  top: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 20px 0px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.f-p a {
+  color: #606060;
+  font-size: 14px;
+}
+
+.f-p a:hover {
+  color: #606060;
+}
+
+.brand {
+  padding-top: 40px;
+}
+
+.brand img {
+  width: 150px;
+  padding-bottom: 40px;
+}
+
+.brand h4 {
+  font-size: 25px;
+  color: #000;
+  font-weight: bold;
+}
+
+.brand p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #707070;
+}
+
+@supports (-ms-ime-align: auto) {
+  .carousel-item img {
+    height: 100vh;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: none;
+  }
+}
+
+.login-page {
+  width: 446px;
+  margin: auto;
+}
+
+.login-form {
+  margin-bottom: 50px;
+}
+
+.l-form {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+  margin: 0px auto;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.l-form input {
+  width: 100%;
+  color: #707070;
+  padding-top: 33px;
+  border: none;
+  font-size: 18px;
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+.l-form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: #707070;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 0px !important;
+  top: -21px;
+}
+
+.l-form label::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-left: 6px solid #0761A6;
+  -webkit-transform: translateY(130%);
+          transform: translateY(130%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  top: 22px;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding-bottom: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-left: 30px;
+}
+
+.l-form input:focus {
+  outline: none;
+}
+
+.l-form input:focus + .label-name .content-name,
+.l-form input:valid + .label-name .content-name {
+  -webkit-transform: translateY(-90%);
+          transform: translateY(-90%);
+  font-size: 14px;
+  left: 0px;
+  color: #707070;
+  padding-bottom: 2px;
+}
+
+.l-form input:focus + .label-name::after,
+.l-form input:valid + .label-name::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.form {
+  margin-top: 22%;
+}
+
+.modal-footer {
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
+}
+
+.s-up {
+  color: #0761A6;
+}
+
+.modal-footer {
+  border: 0px !important;
+}
+
+.modal-body {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -ms-flex-item-align: center !important;
+      align-self: center !important;
+  height: 230px !important;
+  width: 100% !important;
+}
+
+.modal-body p {
+  padding-bottom: 10px;
+}
+
+.ok-btn {
+  background: #f58027 !important;
+  outline: none;
+}
+
+button.ok-btn.text-center {
+  outline: none;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,67 @@
+.side-menubar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: #0761A6;
+    z-index: 90;
+    padding: 92px 0px;
+}
+
+.side-menubar ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+    float: left;
+}
+.side-menubar ul li{
+    width: 100%;
+    float: left;
+    position: relative;
+    margin: 10px 0px;
+}
+.side-menubar ul li a{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.side-menubar ul li img{
+    height: 19px;
+    opacity: 0.8;
+}
+.side-menubar ul li img.width{
+    height: auto;
+    width: 20px;
+}
+.side-menubar ul li:hover img{
+    opacity: 1;
+}
+.side-menubar ul li .hover-menu{
+    position: absolute;
+    left: 100%;
+    background-color: #0761A6;
+    color: #fff;
+    top: 0;
+    min-width: 150px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.side-menubar ul li .hover-menu a{
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+}
+.side-menubar ul li:hover .hover-menu{
+    display: block;
+}

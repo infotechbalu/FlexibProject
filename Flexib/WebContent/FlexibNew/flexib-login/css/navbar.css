@@ -1,0 +1,178 @@
+.navbarFixed{
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px #cdcdcd;
+    z-index: 99;
+}
+body{
+    background-color: #FCFCFC;
+    color: rgba(7, 23, 32, 0.68);
+}
+.grid-icon{
+    float: left;
+    padding: 25px 20px;
+}
+.grid-icon img{
+    width: 20px;
+}
+.logo-container{
+    float: left;
+    padding: 16px 10px;
+}
+.logo-container img{
+    height: 40px;
+}
+.right-allign{
+    float: right;
+}
+.userdata{
+    float: left;
+    text-align: right;
+    padding-right: 8px;
+}
+.user-image{
+    float: left;
+}
+.user-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.userdata h4{
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.userdata p{
+    color: #818181;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.userdata p.position-in{
+     color: #000;
+}
+.dropdown-profile{
+    float: left;
+    padding: 16px 20px;
+}
+.bell-icon{
+    padding: 15px 0px;
+    float: left;
+    cursor: pointer;
+}
+.bell{
+    float: left;
+    padding: 10px 10px;
+    position: relative;
+}
+.bell img{
+    width: 18px;
+}
+.nottification{
+    background-color: #F03737;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+.user-profile-main{
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.user-profile-details{
+    position: absolute;
+    z-index: 12;
+    box-shadow: 0px 3px 30px rgba(102, 67, 181, 0.18);
+    background: #FFFFFF;
+    width: 211px;
+    right: -10px;
+    top: -10px;
+    padding: 10px;
+    padding-left: 25px;
+    border-radius: 5px;
+    display: none;
+    float: left;
+}
+.user-profile-details.show-div{
+    display: block;
+}
+.user-details{
+    float: right;
+}
+.full-width{
+    width: 100%;
+    float: left;
+}
+.user-details-list ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+.user-details-list ul li{
+    width: 100%;
+    float: left;
+}
+.user-details-list ul li a{
+    width: 100%;
+    float: left;
+    padding: 10px 0px;
+    font-size: 12px;
+    color: #101010;
+    padding-left: 13px;
+    position: relative;
+    cursor: pointer;   
+    font-weight: 600;
+}
+.user-details-list ul li a img{
+    width: 13px;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+.user-details-list ul li a span{
+    padding-left: 5px;
+}
+.user-details-list{
+    margin-top: 16px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(102, 67, 181, 0.19);
+}
+.user-details-list ul li a:not([href]):not([tabindex]){
+    color: #101010;
+}
+.searchbar-section{
+    float: left;
+    padding: 18px 20px;
+}
+.inputareain{
+    float: left;
+    width: 251px;
+    position: relative;
+}
+.inputareain .form-control{
+    width: 100%;
+    border-radius: 18px;
+    background-color: #3939391A;
+    height: 35px;
+    border: 0px;
+    padding-left: 35px;
+    font-size: 12px;
+}
+.inputareain .search{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.2rem rgba(48, 98, 166, 0.17);
+}

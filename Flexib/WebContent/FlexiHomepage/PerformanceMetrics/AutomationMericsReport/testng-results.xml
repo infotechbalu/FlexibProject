@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="8" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression suite" duration-ms="1853743" started-at="2021-06-17T08:36:01Z" finished-at="2021-06-17T09:06:55Z">
+    <groups>
+    </groups>
+    <test name="Falcon test" duration-ms="1853743" started-at="2021-06-17T08:36:01Z" finished-at="2021-06-17T09:06:55Z">
+      <class name="com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow@70e38ce1]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="beforeSuite" is-config="true" duration-ms="24" started-at="2021-06-17T08:36:01Z" finished-at="2021-06-17T08:36:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow@70e38ce1]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="BeforeClass" is-config="true" duration-ms="2" started-at="2021-06-17T08:36:16Z" finished-at="2021-06-17T08:36:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow@70e38ce1]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="BeforeMethod" is-config="true" duration-ms="4" started-at="2021-06-17T08:36:18Z" finished-at="2021-06-17T08:36:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow.Avoka_TC_001_Approve(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@15b9bed1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method name="Avoka_TC_001_Approve" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" signature="Avoka_TC_001_Approve(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow@70e38ce1]" status="PASS" duration-ms="286512" finished-at="2021-06-17T08:41:05Z" started-at="2021-06-17T08:36:18Z" data-provider="EnvironMentDeviceOSVersionAndBrowser" description="User is Creating Account with IDV and IDA APPROVAL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataSet1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Desktop]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Avoka_TC_001_Approve -->
+        <test-method status="PASS" signature="AfterMethodExecuteThis(org.testng.ITestResult)[pri:0, instance:com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow@70e38ce1]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="AfterMethodExecuteThis" is-config="true" duration-ms="2001" started-at="2021-06-17T08:41:19Z" finished-at="2021-06-17T08:41:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Avoka_TC_001_Approve ON DATASET1 *** DESKTOP ***   ***   *** CHROME status=SUCCESS method=TC_001_Avoka_AccountCreation_Flow.Avoka_TC_001_Approve(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow@70e38ce1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodExecuteThis -->
+        <test-method status="PASS" signature="flushh()[pri:0, instance:com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow@70e38ce1]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="flushh" is-config="true" duration-ms="45087" started-at="2021-06-17T08:41:21Z" finished-at="2021-06-17T08:42:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushh -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow@70e38ce1]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="afterSuite" is-config="true" duration-ms="0" started-at="2021-06-17T09:07:13Z" finished-at="2021-06-17T09:07:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow@70e38ce1]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="endTest" is-config="true" duration-ms="26" started-at="2021-06-17T09:07:13Z" finished-at="2021-06-17T09:07:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.falcon.TestCases.TC_001_Avoka_AccountCreation_Flow -->
+      <class name="com.falcon.TestCases.TC_002_Avoka_Decline_Flow">
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="BeforeClass" is-config="true" duration-ms="1" started-at="2021-06-17T08:42:06Z" finished-at="2021-06-17T08:42:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="BeforeMethod" is-config="true" duration-ms="2" started-at="2021-06-17T08:42:07Z" finished-at="2021-06-17T08:42:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.falcon.TestCases.TC_002_Avoka_Decline_Flow.Avoka_TC_002_Decline(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3252f9f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method name="Avoka_TC_002_Decline" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" signature="Avoka_TC_002_Decline(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" status="PASS" duration-ms="128300" finished-at="2021-06-17T08:44:15Z" started-at="2021-06-17T08:42:07Z" data-provider="EnvironMentDeviceOSVersionAndBrowser" description="User Application declined">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataSet1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Desktop]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Avoka_TC_002_Decline -->
+        <test-method status="PASS" signature="AfterMethodExecuteThis(org.testng.ITestResult)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="AfterMethodExecuteThis" is-config="true" duration-ms="2001" started-at="2021-06-17T08:44:25Z" finished-at="2021-06-17T08:44:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Avoka_TC_002_Decline ON DATASET1 *** DESKTOP ***   ***   *** CHROME status=SUCCESS method=TC_002_Avoka_Decline_Flow.Avoka_TC_002_Decline(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodExecuteThis -->
+        <test-method status="PASS" signature="flushh()[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="flushh" is-config="true" duration-ms="33115" started-at="2021-06-17T08:44:27Z" finished-at="2021-06-17T08:45:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushh -->
+        <test-method name="Avoka_TC_002_Decline" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" signature="Avoka_TC_002_Decline(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" status="PASS" duration-ms="383863" finished-at="2021-06-17T08:51:24Z" started-at="2021-06-17T08:45:00Z" data-provider="EnvironMentDeviceOSVersionAndBrowser" description="User Application declined">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataSet2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iOs]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[14.3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Avoka_TC_002_Decline -->
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2021-06-17T08:45:00Z" finished-at="2021-06-17T08:45:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.falcon.TestCases.TC_002_Avoka_Decline_Flow.Avoka_TC_002_Decline(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4f8bea17]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="AfterMethodExecuteThis(org.testng.ITestResult)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="AfterMethodExecuteThis" is-config="true" duration-ms="2002" started-at="2021-06-17T08:51:37Z" finished-at="2021-06-17T08:51:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Avoka_TC_002_Decline ON DATASET2 *** MOBILE *** IOS *** 14.3 *** SAFARI status=SUCCESS method=TC_002_Avoka_Decline_Flow.Avoka_TC_002_Decline(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodExecuteThis -->
+        <test-method status="PASS" signature="flushh()[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="flushh" is-config="true" duration-ms="34114" started-at="2021-06-17T08:51:39Z" finished-at="2021-06-17T08:52:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushh -->
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="BeforeMethod" is-config="true" duration-ms="1" started-at="2021-06-17T08:52:13Z" finished-at="2021-06-17T08:52:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.falcon.TestCases.TC_002_Avoka_Decline_Flow.Avoka_TC_002_Decline(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@77f09340]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method name="Avoka_TC_002_Decline" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" signature="Avoka_TC_002_Decline(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" status="PASS" duration-ms="334159" finished-at="2021-06-17T08:57:47Z" started-at="2021-06-17T08:52:13Z" data-provider="EnvironMentDeviceOSVersionAndBrowser" description="User Application declined">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataSet3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mobile]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8.1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Avoka_TC_002_Decline -->
+        <test-method status="PASS" signature="AfterMethodExecuteThis(org.testng.ITestResult)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="AfterMethodExecuteThis" is-config="true" duration-ms="2001" started-at="2021-06-17T08:57:59Z" finished-at="2021-06-17T08:58:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Avoka_TC_002_Decline ON DATASET3 *** MOBILE *** ANDROID *** 8.1 *** CHROME status=SUCCESS method=TC_002_Avoka_Decline_Flow.Avoka_TC_002_Decline(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodExecuteThis -->
+        <test-method status="PASS" signature="flushh()[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="flushh" is-config="true" duration-ms="33591" started-at="2021-06-17T08:58:02Z" finished-at="2021-06-17T08:58:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushh -->
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="BeforeMethod" is-config="true" duration-ms="1" started-at="2021-06-17T08:58:35Z" finished-at="2021-06-17T08:58:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.falcon.TestCases.TC_002_Avoka_Decline_Flow.Avoka_TC_002_Decline(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2fe7e459]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method name="Avoka_TC_002_Decline" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" signature="Avoka_TC_002_Decline(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" status="PASS" duration-ms="450908" finished-at="2021-06-17T09:06:06Z" started-at="2021-06-17T08:58:35Z" data-provider="EnvironMentDeviceOSVersionAndBrowser" description="User Application declined">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataSet4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iPad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iOs]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[14.3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Avoka_TC_002_Decline -->
+        <test-method status="PASS" signature="AfterMethodExecuteThis(org.testng.ITestResult)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="AfterMethodExecuteThis" is-config="true" duration-ms="2002" started-at="2021-06-17T09:06:20Z" finished-at="2021-06-17T09:06:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI status=SUCCESS method=TC_002_Avoka_Decline_Flow.Avoka_TC_002_Decline(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodExecuteThis -->
+        <test-method status="PASS" signature="flushh()[pri:0, instance:com.falcon.TestCases.TC_002_Avoka_Decline_Flow@1ebea008]" test-instance-name="Avoka_TC_002_Decline ON DATASET4 *** IPAD *** IOS *** 14.3 *** SAFARI" name="flushh" is-config="true" duration-ms="33584" started-at="2021-06-17T09:06:22Z" finished-at="2021-06-17T09:06:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushh -->
+      </class> <!-- com.falcon.TestCases.TC_002_Avoka_Decline_Flow -->
+    </test> <!-- Falcon test -->
+  </suite> <!-- Regression suite -->
+</testng-results>

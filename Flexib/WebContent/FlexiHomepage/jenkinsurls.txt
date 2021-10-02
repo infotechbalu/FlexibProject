@@ -1,0 +1,8 @@
+http://10.1.129.173:8090/job/DevOps/job/Automation%20Testing/
+http://10.1.129.173:8090/job/DevOps/job/DeploymentForQA/
+http://10.1.129.173:8090/job/DevOps/job/MicroServicesAPI/
+http://10.1.129.173:8090/job/DevOps/job/MobileAutomation/
+http://10.1.129.173:8090/job/DevOps/job/Performance%20Testing/
+http://10.1.129.173:8090/job/DevOps/job/Security%20Testing/
+http://10.1.129.173:8090/job/DevOps/job/Static%20Code%20Analysis/
+http://10.1.129.173:8090/job/DevOps/job/VisualAutomationRegression/

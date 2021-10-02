@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="57824" started-at="2019-03-06T05:59:56Z" finished-at="2019-03-06T06:00:54Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="57824" started-at="2019-03-06T05:59:56Z" finished-at="2019-03-06T06:00:54Z">
+      <class name="com.shoppingcart.tests.TestController">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.shoppingcart.tests.TestController@4566e5bd]" name="initBrowser" is-config="true" duration-ms="5056" started-at="2019-03-06T05:59:56Z" finished-at="2019-03-06T06:00:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="TestCaseController()[pri:0, instance:com.shoppingcart.tests.TestController@4566e5bd]" name="TestCaseController" duration-ms="51499" started-at="2019-03-06T06:00:01Z" finished-at="2019-03-06T06:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaseController -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.shoppingcart.tests.TestController@4566e5bd]" name="quitBrowser" is-config="true" duration-ms="1238" started-at="2019-03-06T06:00:53Z" finished-at="2019-03-06T06:00:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.shoppingcart.tests.TestController -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

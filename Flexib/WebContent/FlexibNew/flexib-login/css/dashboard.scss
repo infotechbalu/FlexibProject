@@ -1,0 +1,263 @@
+table.a {
+	table-layout: auto;
+	width: 180px; 
+  }
+  
+  table.b {
+	table-layout: fixed;
+	width: 180px; 
+  }
+  .d-head {
+	  background: #cfdffd;
+  }
+  table.dataTable thead th {
+	border-bottom: 1px solid #fff
+  }
+
+  table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
+	background-color: transparent;
+  }
+  table.dataTable.stripe tbody tr.odd {
+	  background-color: #fff;
+  }
+  table.dataTable.stripe tbody tr.even {
+	background-color: #f3f7ff;
+}
+.stripe {
+	border:transparent !important;
+}
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 1px solid #fff;
+}
+
+.dataTables_wrapper {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+table.dataTable thead th {
+	padding: 20px 10px;
+}
+table.dataTable tbody td {
+    padding: 20px 10px;
+}
+.t-body {
+	.com {
+		background-color:#2B8B3733;
+		padding: 10px;
+		border-radius: 50px;
+		color: #2B8B37;
+		border: 1px solid #298635;
+	}
+	.fail {
+		background-color:#E8272733;
+		padding: 10px 25px;
+		border-radius: 50px;
+		color: #E82727;
+		border: 1px solid #E82727;
+	}
+	.in-prog {
+		background-color:#F5802733;
+		padding: 10px;
+		border-radius: 50px;
+		color: #F58027;
+		border: 1px solid #F58027;
+	}
+	.org {
+		background: #F58027;
+		border-radius: 50px;
+		padding: 5px 9px;
+	}
+	.grn {
+		background: #2B8B37 ;
+		border-radius: 50px;
+		padding: 5px 9px;
+	}
+	.ble  {
+		background: #6698FF  ;
+		border-radius: 50px;
+		padding: 5px 9px;
+	}
+	.rd  {
+		background: #DC0079   ;
+		border-radius: 50px;
+		padding: 5px 9px;
+	}
+}
+.d-head {
+	th {
+		img {
+			width: 15px;
+			    float: right;
+    padding-top: 3px;
+		}
+	}
+}
+button {
+	background-color: transparent;
+    border: 0px;
+	outline: none !important;
+	color: #0761A6;
+	font-size: 22px;
+	cursor: pointer;
+}
+.d-arr {
+	top: 7px !important;
+}
+.datepicker td, .datepicker th {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.85rem;
+}
+
+.datepicker {
+    margin-bottom: 3rem;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+body {
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.input-group {
+    border-radius: 30rem;
+}
+
+input.form-control {
+    border-radius: 30rem 0 0 30rem;
+    border: none;
+}
+
+input.form-control:focus {
+    box-shadow: none;
+}
+
+input.form-control::placeholder {
+    font-style: italic;
+}
+
+.input-group-text {
+    border-radius: 0 30rem 30rem 0;
+    border: none;
+}
+
+.datepicker-dropdown {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.pgn {
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+	padding-top: 10px;
+
+	.pgn-box1 {
+		display: flex;
+	}
+}
+.chart-info {
+	position: absolute;
+    top: 33px;
+    left: 32%;
+
+	p {
+		font-weight: bold;
+		color: #191A20;
+	}
+
+}
+
+.chart-info1 {
+    position: absolute;
+    top: 59px;
+    left: 38%;
+    display: flex;
+	p {
+		position: relative;
+		&:before {
+			
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background-color: #00A3B0;
+			content: "";
+			left: -17px;
+			top: 5px;
+			
+		}
+	}
+
+	span {
+		position: relative;
+		&:before {
+			
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background-color: #DC0079;
+			content: "";
+			left: -17px;
+			top: 5px;
+			
+		}
+	}
+
+}
+
+.chart-info2 {
+    position: absolute;
+    top: 85px;
+    left: 38%;
+
+	p {
+		position: relative;
+		&:before {
+			
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background-color:#0761A6;
+			content: "";
+			left: -17px;
+			top: 5px;
+			
+		}
+	}
+
+}
+
+.crt-spc {
+
+    margin-bottom: 20px;
+    background: #fff;
+	border-radius: 5px;
+    position: relative;
+    margin-right: 11px;
+    width: 24%;
+    padding: 0px 12px 0px 8px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.canvas-caoption {
+position: absolute;
+top: 41%;
+left: 27px;
+background: #99dadf;
+padding: 6px 8px 6px 7px;
+border-radius: 50px;
+font-weight: bold;
+}
+.canvas-caoption1 {
+	position: absolute;
+	top: 41%;
+	left: 27px;
+	background: #c2d6ff;
+	padding: 6px 8px 6px 7px;
+	border-radius: 50px;
+	font-weight: bold;
+	}

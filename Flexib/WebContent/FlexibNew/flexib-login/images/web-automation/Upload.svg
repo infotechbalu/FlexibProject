@@ -1,0 +1,12 @@
+<svg id="Component_106_1" data-name="Component 106 – 1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="_Button_Style" data-name="🔶 Button Style" transform="translate(-0.086)">
+    <g id="_Outline_Color" data-name="🎨 Outline Color" transform="translate(0.086)" fill="#fcfcfc" stroke="#0761a6" stroke-miterlimit="10" stroke-width="1">
+      <rect width="40" height="40" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" fill="none"/>
+    </g>
+  </g>
+  <g id="upload" transform="translate(10 10)">
+    <path id="Path_4413" data-name="Path 4413" d="M15.75,18H5.25A2.21,2.21,0,0,1,3,15.75v-3A.709.709,0,0,1,3.75,12a.709.709,0,0,1,.75.75v3a.709.709,0,0,0,.75.75h10.5a.709.709,0,0,0,.75-.75v-3a.75.75,0,0,1,1.5,0v3A2.21,2.21,0,0,1,15.75,18Zm-1.5-9.75a.681.681,0,0,1-.525-.225L10.5,4.8,7.275,8.025a.742.742,0,0,1-1.05-1.05l3.75-3.75a.725.725,0,0,1,1.05,0l3.75,3.75a.725.725,0,0,1,0,1.05A.681.681,0,0,1,14.25,8.25Z" transform="translate(0 0)" fill="#0761a6"/>
+    <path id="Path_4414" data-name="Path 4414" d="M17.25,13.5a.709.709,0,0,1-.75-.75v-9a.75.75,0,0,1,1.5,0v9A.709.709,0,0,1,17.25,13.5Z" transform="translate(-6.75)" fill="#0761a6"/>
+  </g>
+</svg>

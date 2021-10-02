@@ -1,0 +1,225 @@
+/* Tabs Start*/
+
+section {
+	padding: 10px 0;
+}
+body {
+	background: #FCFCFC;
+	color: black;
+}
+p {
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: #0F5EF7 !important;
+	background-color: transparent;
+	border-color: transparent transparent #0F5EF7;
+	border-bottom: 4px solid !important;
+	font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+	border: 1px solid transparent;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	color: black;
+	font-size: 15px;
+}
+.choose-option,#reportlog {
+	display:none;
+}
+#xlsheet_btn {
+	display:none;
+}
+.nav-item {
+	padding: 4px 0px !important;
+	text-align: left !important;
+}
+.nav-tabs {
+	border-bottom: 0px solid #dee2e6;
+	width: 13%;
+}
+nav hr {
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+}
+.froject-upload {
+	float: right;
+	margin: -24px 13px 5px 3px;
+	border: 1px solid black;
+	padding: 2px;
+}
+.project-form {
+	z-index: 999;
+	position: absolute;
+	right: 0px;
+	top: 0%;
+	width: 350px;
+	height: 62px;
+	display: none;
+}
+.upload-form-details {
+	border: 1px solid #98ecd9;
+	width: 100%;
+	margin-left: 0px;
+	padding: 5px;
+	background: #fff;
+	padding: 5px 5px 5px 20px;
+}
+.upload-form-details form select {
+	width: 100%;
+	border: 1px solid #0F5EF7;
+	margin-bottom: 5px;
+}
+.upload-form-details form {
+	width: 94%;
+}
+.nav-item .titletip img{
+	width:56%;
+}
+/* Tabs End*/
+.report-path p {
+    font-size: 12px;
+    text-align: right;
+    width: 100%;
+    margin: 0px;
+}
+.project-name {
+    color: #0761A6;
+    font-weight: bold;
+    font-size: 19px;
+    border: 1px solid #fcfcfc !important;
+    background: #fcfcfc;
+    margin-top: -12px;
+}
+input,select{
+    border: 1px solid #0F5EF7 !important;
+    background-color: #fcfcfc !important;
+}
+.btn-primary {
+    background: #0761A6 !important;
+    padding: 8px 8px;
+    width: 164px;
+    float: right;
+}
+.btn-default, .btn-info {
+    width: 164px;
+    padding: 8px 8px;
+    border: 1px solid #0761a6;
+    background-color: #fcfcfc;
+    color:#0761a6;
+}
+.performance_code .row{
+margin-bottom: 8px;
+}
+.progress-console {
+    width: 100%;
+    margin-top: 2%;
+    border: 1px solid #ccc;
+}
+.progress-console {
+    width: 100%;
+    margin-top: 2%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.progress-console .progress-log {
+    background: #0F5EF733;
+    width: 100%;
+    margin-left: 0px;
+    padding: 5px 10px 1px 15px;
+    line-height: 37px;
+}
+#reportlog{
+    width: 100%;
+    margin-left: 2px;
+}
+.not_started {
+    color: black;
+    background-color: #E82727 !important;
+    border: 1px solid #E82727 !important;
+    border-radius: 20px;
+}
+table {
+    border: 1px solid #bbb9b9 !important;
+}
+#log_status thead tr,#log_table thead tr{
+    background-color: #0F5EF733;
+}
+#log_status tbody tr{
+    border-bottom: 1px solid #ccc;
+}
+#log_status_length,#log_status_filter,#log_status_info,#log_status_paginate,#log_table_length,#log_table_filter,#log_table_info,#log_table_paginate{
+    display: none;
+}
+.report_console_log{
+    height: 285px;
+}
+.btn-table {
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+.high {
+    color: #E82727;
+    border: 1px solid #E82727 !important;
+}
+.Low {
+    color: #FCCC75;
+    border: 1px solid #FCCC75 !important;
+}
+
+
+/* Four charts */
+.chart-legend{
+    height:15px;
+    width:15px; 
+    margin-bottom: -16px;
+     margin-left: -20px;
+    }
+.doughnut-box{
+    border: 1px solid #b1a9a9;
+    height: 110px;
+    padding: 10px 16px 3px 0px;
+    padding: 10px 16px 3px 0px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #00000038;
+}
+.doughnut-box h5{
+    font-size: 16px;
+}
+.md-f{
+    float:left;
+    padding: 0px;
+}
+.text_chat {
+    position: absolute;
+    margin: auto;
+    right: 53px;
+    top: 27px;
+    background-color: #99dadf;
+    border-radius: 50%;
+    height: 31px;
+    text-align: center;
+    padding-top: 5px;
+    width: 31px;
+}
+canvas{
+    margin-top: 8px;
+}
+#report-calenter{
+    padding-left: 40px;
+}
+  .Calendaricon{
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    margin-top: 10px;
+    position: absolute;
+  }
+
+
+
+
+
+

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FLIXIB</title>
+      <script src="js/jquery3.6.0.min.js"></script>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/navbar.css">
+      <link rel="stylesheet" href="css/sidebar.css">
+      <link rel="stylesheet" href="css/Qaops.css">
+      <link rel="stylesheet" href="css/style.css">
+    
+   </head>
+   <body>
+      <!--top nav starts-->
+      <div class="navbarFixed">
+         <div class="grid-icon"> <img src="images/grid.svg"> </div>
+         <div class="logo-container"> <img src="images/Flexib-icon.svg"> </div>
+         <div class="right-allign">
+            <div class="searchbar-section">
+               <div class="inputareain">
+                  <input type="text" class="form-control" placeholder="Search"> <img src="images/dashboard/Search.svg" class="search"> 
+               </div>
+            </div>
+            <div class="bell-icon">
+               <div class="bell">
+                  <img src="images/bell.svg">
+                  <div class="nottification"></div>
+               </div>
+            </div>
+            <div class="dropdown-profile">
+               <div class="user-profile-main">
+                  <div class="userdata">
+                     <h4>Manager</h4>
+                     <p>Last Login 01/01/2021</p>
+                  </div>
+                  <div class="user-image"><img src="images/user.png"></div>
+                  <div class="user-profile-details">
+                     <div class="full-width close-click">
+                        <div class="user-details">
+                           <div class="userdata">
+                              <h4>Rajesh Krishnan</h4>
+                              <p class="position-in">Admin</p>
+                           </div>
+                           <div class="user-image"><img src="images/user.png"></div>
+                        </div>
+                     </div>
+                     <div class="full-width user-details-list">
+                        <ul>
+                           <li>
+                              <a> <img src="images/user-icon.svg"> <span>My Profile</span> </a>
+                           </li>
+                           <li>
+                              <a> <img src="images/settings.svg"> <span>Settings</span> </a>
+                           </li>
+                           <!--
+                              <li>
+                                 <a>
+                                     <img src="images/user-icon.svg"> <span>Theme</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a>
+                                     <img src="images/users.svg"> <span>Entity Change</span>
+                                 </a>
+                              </li>
+                              -->
+                           <li>
+                              <a> <img src="images/log-in.svg"> <span>Logout</span> </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--top nav endss-->
+      <!--side menu starts-->
+      <div class="side-menubar">
+         <ul>
+            <li>
+               <a><img src="images/dashboard/Dashboard.svg" class="menu-icon"></a>
+               <div class="hover-menu"> <a href="dashboard.html">Dashboard</a> </div>
+            </li>
+            <li>
+               <a><img src="images/dashboard/Automation.svg" class="menu-icon"></a>
+               <div class="hover-menu"> <a href="Automation.html">Digital Automation</a> <a href="Performance.html">Perfomance</a> <a href="security.html">Security</a> <a href="QAOPS.html">QA Ops</a> </div>
+            </li>
+            <li>
+               <a><img src="images/dashboard/Create-new-projecy.svg" class="menu-icon"></a>
+               <div class="hover-menu"> <a href="#">Create New Project</a> </div>
+            </li>
+            <li>
+               <a><img src="images/dashboard/Reports.svg" class="menu-icon"></a>
+               <div class="hover-menu"> <a href="Reports.html">Reports</a> </div>
+            </li>
+            <li>
+               <a><img src="images/dashboard/Monitoring.svg" class="menu-icon width"></a>
+               <div class="hover-menu"> <a href="#">Monitoring</a> </div>
+            </li>
+            <li>
+               <a><img src="images/dashboard/Continiuos-testing.svg" class="menu-icon"></a>
+               <div class="hover-menu"> <a href="Testing.html">Continiuos Testing</a> </div>
+            </li>
+            <li>
+               <a><img src="images/dashboard/Defect-Tracker.svg" class="menu-icon"></a>
+               <div class="hover-menu"> <a href="#">Defect Tracker</a> </div>
+            </li>
+         </ul>
+      </div>
+      <!--side menu endss-->
+      <!--main container starts-->
+      <div class="main-container-section">
+         <div class="container-fluid">
+            <section id="automation-header">
+               <div class="container">
+                  <div class="full-width common-padd-left">
+                     <h6>Build Pipeline : DevOps / History  <span class="titletip"><img src="images/web-automation/help-circle.svg"> <span class="textbottom">Performance Testing of Web</span></span></h6>
+                  </div>
+                  <div class="full-width automation-path relative common-padd-left">
+                     <img src="images/web-automation/arrow-left-circle.svg" class="left-arrow">
+                     <p>Home > QA Ops > <span id="page">Build Pipeline  </span></p>
+                     <select class=" project-name" name="project" id="head_project">
+                       
+                     </select>
+                  </div>
+               </div>
+            </section>
+            <section>
+                <div class="container">
+                <hr>
+               <div class="col-md-3 leftlistbar">
+
+                  <div id="someID" class="filtering">
+                     <!-- <i class="fa fa-cogs" aria-hidden="true"></i> -->
+                  <ul></ul>
+                    <div class="clear"></div>
+                  </div>
+
+               </div>
+               <div class="col-md-9 rightlistbar">
+<h4>  <img src="images/Qaops/devops.svg" class=""> Build #44 </h4>
+<div class="row statusbar">
+    <p>
+      <img src="images/Qaops/Success.svg" class=""> #44 was successful - started by <a href="#"> Username</a>
+   </p> 
+</div>
+<h6>Details</h6>
+<p><input type="checkbox" checked> Completed 12 Aug 2021, 9 : 53 : 46 PM 6days<span>19hrs ago</span> </p>
+<div class="col-md-2 box">
+   <p><img src="images/Qaops/Start.svg" class="Qa_start"> Duration</p>
+</div>
+<div class="col-md-10 box">
+   <p>8 minutes</p>
+</div>
+<div class="col-md-2 box">
+   <p> This run spent</p>
+</div>
+<div class="col-md-10 box">
+<p>27 ms waiting.</p>
+ <p>21 sec build duration.</p>
+<P>21 sec total from scheduled to completion.</P> 
+</div>
+
+<div class="col-md-2 box">
+   <p> Labels</p>
+</div>
+<div class="col-md-10 box">
+<p>#44  <img src="images/Qaops/Copy.svg" class=""> </p>
+</div>
+
+<div class="col-md-2 box">
+   <p> Revisions</p>
+</div>
+<div class="col-md-2 box">
+   <p> Browser XYZ</p>
+</div>
+<div class="col-md-8 box">
+<p><input type="text" placeholder="2f7749968a4cccfe409a7f3b7c1794cab6920a5f" class="copycode"> <img src="images/Qaops/Copy.svg" class=""> </p>
+</div>
+
+<div class="col-md-2 box">
+   <p> Repository</p>
+</div>
+<div class="col-md-2 box">
+   <p> GIT</p>
+</div>
+<div class="col-md-8 box">
+<p><input type="text" placeholder="2f7749968a4cccfe409a7f3b7c1794cab6920a5f" class="copycode"> <img src="images/Qaops/Copy.svg" class=""> </p>
+</div>
+
+<div class="col-md-2 box">
+   <p> Note</p>
+</div>
+<div class="col-md-4 box">
+   <p> Environment Variables(89)</p>
+   <p> Environment Variables(136)</p>
+   <p> Environment Variables(136)</p>
+</div>
+<div class="col-md-5 box">
+<p>9 Different </p>
+<p>1 Different </p>
+<p>0 Different </p>
+</div>
+
+</div>
+
+
+                </div>
+              </section>
+          
+         </div>
+       
+      </div>
+     
+	<!--main container endss-->
+	<!--    copy rights starts-->
+	<div class="copyright-container"> Copyright © 3i Infotech. All rights reserved. </div>
+	<!--    copy rights ends-->
+	<script src="js/jquery3.6.0.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/Chart.js"></script>
+	<script>
+	$(".user-profile-main").click(function() {
+		$(".user-profile-details").addClass("show-div");
+		event.stopPropagation();
+	});
+	$(".close-click").click(function() {
+		$(".user-profile-details").removeClass("show-div");
+		event.stopPropagation();
+	});
+	$('body').click(function() {
+		$('.user-profile-details').removeClass("show-div");
+	});
+	</script>
+	<script>
+	$(".nav-item").click(function() {
+		document.getElementById("page").innerHTML = this.id;
+	});
+
+	</script>
+
+
+	<script>     
+  // project list   
+     project_Function();
+     function project_Function() {
+      $.ajax({
+       type: "GET",
+      url: "https://api.github.com/orgs/vamsiui/projects",
+          headers:{
+              Accept: "application/vnd.github.inertia-preview+json",
+          },
+       success: function(data) {
+           console.log(data);
+     for (var i = 0; i < data.length; i++) {
+         var select = document.getElementById("head_project");
+         var option = document.createElement("option");
+         option.text = data[i].name;
+         option.value = data[i].id;
+         select.add(option);
+                }	
+       },
+       error: function(data, textStatus, jqXHR) {
+        console.log(data);
+       }
+      });
+     };
+     </script>
+      <script type="text/javascript" language="javascript">
+         var list = [{
+             "id": 852157,
+                 "name": "Pipeline #44",
+         }, {
+             "id": 852217,
+                 "name": "Pipeline #43",
+         }, {
+             "id": 852238,
+                 "name": "Pipeline #42",
+         },{
+             "id": 852238,
+                 "name": "Pipeline #41",
+         }];
+         console.log(list);
+         var $container = $('#someID ul');
+         var i = 0;
+         $.each(list, function (i, event) {
+         i = i+1;
+             $('<a/>', {
+                 text: event.name,
+          //     id: "mylist"+i,
+               onclick :"clickme"+i+"(); this.onclick=null;", 
+                 href: '#'
+             }).wrap('<li id="mylist'+i+'" class="mainlist" />').parent().appendTo($container);
+         });
+            
+         
+         function clickme1(){
+		 
+            repo_Function()
+			
+      
+      function repo_Function() {
+	  $.ajax({
+type: "GET",
+url: "http://localhost:3000/api/Prometheus-1/localhost/1/query/dashboards/uid/haryan-jenkins",
+headers:{
+Accept: "application/json",
+"Content-Type": "application/json",
+Authorization:"Bearer eyJrIjoiY21pSG1uc3NoMjZyRWlOSTI3N255djVLeUpscThkWnUiLCJuIjoiSFRNTF9LZXkiLCJpZCI6MX0=",
+// 'Access-Control-Allow-Origin': 'http://14.99.175.107:17691',
+},
+success: function(data) {
+console.log(data);
+},
+error: function(data, textStatus, jqXHR) {
+console.log(data);
+}
+});
+
+   /*   
+         fetch("http://14.99.175.107:17691/job/TeachersFCU_Pilot/view/Teachers_AutomationPipeline/api/json?pretty=true").then(function(response) {
+  return response.json();
+}).then(function(data) {
+  console.log(data);
+}).catch(function() {
+  console.log("Booo");
+});
+*/
+
+//          $.ajax({
+
+// url: 'http://14.99.175.107:17691/job/TeachersFCU_Pilot/view/Teachers_AutomationPipeline/api/json?pretty=true',
+// //data: myData,
+// type: 'GET',
+// crossDomain: true,
+// dataType: 'jsonp',
+// success: function() { alert("Success"); },
+// error: function() { alert('Failed!'); },
+// beforeSend: setHeader
+// });
+// function setHeader(xhr) {
+// xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+// }
+
+
+//          $.ajax({
+//    url: 'http://14.99.175.107:17691/job/TeachersFCU_Pilot/view/Teachers_AutomationPipeline/api/json?pretty=true',
+//    headers: {  'Access-Control-Allow-Origin': '*' },
+//   // data: data,
+//    type: 'GET',
+  
+//    /* etc */
+//    success: function(jsondata){
+// console.log(jsondata);
+
+//    }
+// })
+
+
+
+//          $.ajax({
+//    type: 'GET',
+//    crossDomain: true,
+//    dataType: 'json',
+//    url: 'http://14.99.175.107:17691/job/TeachersFCU_Pilot/view/Teachers_AutomationPipeline/api/json?pretty=true',
+//    success: function(jsondata){
+// console.log(jsondata);
+//    }
+// })
+
+
+
+//          var xhr = new XMLHttpRequest();
+// xhr.open("GET", "http://14.99.175.107:17691/job/TeachersFCU_Pilot/view/Teachers_AutomationPipeline/api/json?pretty=true", true);
+// xhr.onreadystatechange = function() {
+//   if (xhr.readyState == 4) {
+//     // WARNING! Might be evaluating an evil script!
+//     var resp = eval("(" + xhr.responseText + ")");
+//     console.log(resp);
+//   }
+// }
+// xhr.send();
+
+
+      
+      //  $.ajax({
+      
+      //   type: "GET",
+      //  url: "http://14.99.175.107:17691/job/TeachersFCU_Pilot/view/Teachers_AutomationPipeline/api/json?pretty=true",
+      //  headers:  {
+      //         "accept": "application/json",
+      //         "Access-Control-Allow-Origin":"*"
+      //     },
+      //    dataType: "jsonp",
+      //    crossDomain: true,
+      //  success: function(data) {
+      //      console.log(data);		
+      //   },
+      //   error: function(data, textStatus, jqXHR) {
+      //    console.log(data);
+      //   }
+      //  });
+
+      };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         var sub = [{
+             "id": 852157,
+                 "name": "#44 SAST_SonarQube",
+                 "color": "green"
+         }, {
+             "id": 852217,
+                 "name": "#22 SCA",
+                 "color": "red"
+         }, {
+             "id": 852238,
+                 "name": "#40 Integration deployment for QA",
+                 "color": "green"
+         },{
+             "id": 852239,
+                 "name": "#27 Webservices_smoke",
+                 "color": "green"
+         },{
+             "id": 852235,
+                 "name": "#68 Performance parallel loadtest",
+                 "color": "blue"
+         }];
+         console.log(sub);
+         var $container = $('#mylist1');
+         $.each(sub, function (i, event) {
+             $('<li/>', {
+                 text: event.name,
+                 class: event.color,
+                 onclick :"details()", 
+                 href: '#'
+             }).wrap('<ul class="sublist" />').parent().appendTo($container);
+         });
+       //  $(this).removeClass('clickme1').addClass('new_class');
+         }  
+         function details(){
+          //   alert("jhf");
+             $(".rightlistbar").css("display", "block");
+         } 
+         
+         </script>
+
+ 
+
+</body>
+
+</html>

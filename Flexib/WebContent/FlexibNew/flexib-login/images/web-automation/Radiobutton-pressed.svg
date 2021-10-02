@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="21" viewBox="0 0 20 21">
+  <defs>
+    <filter id="Rectangle_1720" x="0" y="1" width="20" height="20" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2453" data-name="Group 2453" transform="translate(-431)">
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(431)" fill="#fff" stroke="#0761a6" stroke-width="3">
+      <rect width="20" height="20" rx="10" stroke="none"/>
+      <rect x="1.5" y="1.5" width="17" height="17" rx="8.5" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 431, 0)" filter="url(#Rectangle_1720)">
+      <g id="Rectangle_1720-2" data-name="Rectangle 1720" transform="translate(3 3)" fill="#0761a6" stroke="#fff" stroke-width="2">
+        <rect width="14" height="14" rx="7" stroke="none"/>
+        <rect x="1" y="1" width="12" height="12" rx="6" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
